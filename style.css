@@ -1,0 +1,122 @@
+:root {
+    --clr--cyan: #2bb3b1;
+    --clr--lightcyan: #55c2c1;
+    --clr--brightyellow: hsl(71, 73%, 54%);
+    --clr--lightgray: hsl(204, 43%, 93%);
+    --clr--grayishblue: hsl(218, 22%, 67%);
+
+    --ff--karla: 'Karla', sans-serif;
+    --fw--700: 700;
+
+    --spacer: 1.4rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--ff--karla);
+    color: var(--clr--lightgray);
+    background-color: #ebebeb;
+}
+
+.price-grid {
+    width: 80%;
+    margin: 3rem auto;
+    border-radius: 50px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1.3rem 0;
+}
+
+.container > * {
+    margin-top: var(--spacer);
+}
+
+
+
+.join-now {
+    background-color: #fff;
+    color: var(--clr--grayishblue);
+}
+
+.main-heading {
+    color: var(--clr--cyan);
+}
+
+.tagline {
+    color: var(--clr--brightyellow);
+    font-weight: var(--fw--700);
+}
+
+.subscription {
+    background-color: var(--clr--cyan);
+}
+
+.price {
+    font-size: 1.7rem;
+}
+
+.monthly {
+    color: var(--clr--lightgray);
+}
+
+.btn {
+    color: var(--clr--lightgray);
+    background-color: var(--clr--brightyellow);
+    border: none;
+    border-radius: 1px;
+    padding: 1rem 7rem;
+    font-weight: var(--fw--700);
+    display: block;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+    opacity: .8;
+}
+
+.benefits {
+    background-color: var(--clr--lightcyan);
+}
+
+.benefits__list {
+    list-style: none;
+    line-height: 1.3;
+}
+
+
+/* MEDIA QUERIES */
+@media (min-width: 700px) {
+    .flex {
+        display: flex;
+    }
+
+    .flex > * {
+        flex-grow: 1;
+    }
+
+    .top-container {
+        width: 90%;
+        /* max-width: 700px; */
+    }
+}
+
+
